@@ -1,3 +1,9 @@
 # Yarışma Sayaç Panosu
 
-Local veritabanlı yarışma sayaç panosu
+Tarayıcıda local veritabanınlı yarışma sayaç panosu
+
+---
+
+![Ekran Görüntüsü](resimler/resim-1.png)
+
+---
