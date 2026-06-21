@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yönet — Yarışma Sayaç Panosu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <span class="eyebrow">YÖNET</span>
+    <a class="manage-link" href="index.html">Panoya Dön</a>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1 class="form-title">Yarışma Ekle</h1>
+      <form id="add-form" class="add-form">
+        <label class="field">
+          <span class="field-label">Yarışma Adı</span>
+          <input type="text" id="name-input" required maxlength="120" placeholder="Örn. ICPC World Finals">
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span class="field-label">Tarih</span>
+            <input type="date" id="date-input" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Saat</span>
+            <input type="time" id="time-input" required value="09:00">
+          </label>
+        </div>
+        <button type="submit" class="btn-primary">Ekle</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <div class="list-section-header">
+        <h2 class="section-label">Eklenen Yarışmalar</h2>
+        <div class="backup-actions">
+          <button type="button" id="export-btn" class="backup-btn">Yedek İndir</button>
+          <label class="file-label">
+            Yedek Yükle
+            <input type="file" id="import-input" accept="application/json">
+          </label>
+        </div>
+      </div>
+      <div id="admin-list" class="admin-row-list"></div>
+    </section>
+  </main>
+
+  <footer class="credit">By Istanbul University CITF</footer>
+</div>
+
+<script src="storage.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
