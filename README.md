@@ -1,6 +1,8 @@
 # Yarışma Sayaç Panosu
 
-Tarayıcıda local veritabanınlı yarışma sayaç panosu
+Manuel olarak girilen bilgilerin saklandığı yerel bir veritabanı üzerinden, bir sonraki yarışmaya kalan süreyi gösteren sayfa.
+
+Live: [https://yarisma-sayac.netlify.app/](https://yarisma-sayac.netlify.app/)
 
 ---
 
