@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/competitions"
+  to = "/.netlify/functions/competitions"
+  status = 200
+  force = true
